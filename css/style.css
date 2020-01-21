@@ -1,4 +1,4 @@
-/*formatacoes geral*/
+/*geral*/
 /*-----------------------*/
 
 * {
@@ -36,8 +36,17 @@ body {
 }
 
 /*-----------------------*/
-/*barra de navegacao*/
+/*barra de navegacao do cabecalho*/
 /*-----------------------*/
+
+a:link, a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+a:hover {
+    color: #e50040;
+}
 
 ul {
     margin: 0;
@@ -86,7 +95,7 @@ body.fotos #navegacao a#fotos {
 }
 
 /*-----------------------*/
-/*configuracao do layout uma a tres colunas*/
+/*layout uma a tres colunas*/
 /*-----------------------*/
 
 #conteudo {
@@ -104,29 +113,28 @@ body.fotos #navegacao a#fotos {
     width: 270px;
     float: left;
     margin: 0 0 20px 195px;
-    background: red
 }
 
 #uma-coluna #primario {
     width: 750px;
     margin: 0 0 20px 0;
-    background: red
+   
 }
 
 #duas-colunas #primario {
     width: 555px;
-    background: red
+   
 }
 
 #secundario {
     width: 270px;
     float: left;
     margin: 0 0 20px 15px;
-    background:blue
+    
 }
 
 /*-----------------------*/
-/*configuracao do conteudo dos layouts*/
+/*conteudo dos layouts*/
 /*-----------------------*/
 
 .caixa {
@@ -149,7 +157,7 @@ h2 {
 }
 
 /*-----------------------*/
-/*formatar menu lateral*/
+/*menu lateral na vertical*/
 /*-----------------------*/
 
 #lateral ul a {
@@ -170,7 +178,7 @@ h2 {
 
 
 /*-----------------------*/
-/*formatacao dos formularios*/
+/*formularios*/
 /*-----------------------*/
 
 label {
@@ -192,6 +200,72 @@ input.submit {
     background-color: #b10333;
     border: 2px solid #870529;
 }
+
+/*-----------------------*/
+/*imagens*/
+/*-----------------------*/
+
+img.imagem-principal {
+    width: 98%;
+    border: 3px solid #eee3e3;
+}
+
+/*-----------------------*/
+/*cabecalhos dos conteudos*/
+/*-----------------------*/
+
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3 {
+    background: #b10333;
+    color: #fff;
+}
+
+.entrevista h3 {
+    background: #de003e;
+    color: #fff;
+}
+
+/*-----------------------*/
+/*lista de noticias*/
+/*-----------------------*/
+
+#lista-noticias li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+#lista-noticias li a img{
+   float: left;
+   margin: 5px;
+}
+
+#lista-noticias li a {
+    text-decoration: none;
+ }
+
+#lista-noticias li a h3{
+    font-size: 0.8em;
+    background:white;
+    color: blue;
+    padding: 0;
+ }
+
+ #lista-noticias li a p{
+    font-size: 0.7em;
+    color: black;
+ }
+
+ #lista-noticias li:hover {
+    background: #eee;
+    cursor: pointer;
+ }
 
 
 /*-----------------------*/
